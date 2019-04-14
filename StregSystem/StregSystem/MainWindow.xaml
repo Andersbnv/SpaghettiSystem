@@ -1,0 +1,32 @@
+﻿<Window x:Class="StregSystem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="StregSystem" Height="600" Width="800">
+
+    <Border Padding="10">
+        <StackPanel>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button Margin="0 0 10 0" Grid.Column="0" Content="Se balance" Click="Button_Click_1"/>
+                <Button Grid.Column="1" Content="Tilføj 10,- til balance" Click="Button_Click_2"/>
+                <Button Margin="10 0 0 0" Grid.Column="2" Content="Se bruger" Click="Button_Click"/>
+            </Grid>
+            <ListBox Height="122" Margin="0 10 0 0" Name="Products" FontSize="18" FontFamily="Arial" FontWeight="Bold">
+                <ListBoxItem Content="Øl" Background="LightGray"></ListBoxItem>
+                <ListBoxItem Content="Te" Background="Gray"></ListBoxItem>
+                <ListBoxItem Content="Vand" Background="LightGray"></ListBoxItem>
+                <ListBoxItem Content="Mælk" Background="Gray"></ListBoxItem>
+                <ListBoxItem Content="Juice" Background="LightGray"></ListBoxItem>
+                <ListBoxItem Content="Monster" Background="Gray"></ListBoxItem>
+                <ListBoxItem Content="Kartofler" Background="LightGray"></ListBoxItem>
+            </ListBox>
+        </StackPanel>
+    </Border>
+</Window>
